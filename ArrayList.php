@@ -34,8 +34,8 @@ class ArrayList
         if ($this->isInteger($index)) {
             $newArrayList = array();
             for ($i = 0; $i < $this->size(); $i++)
-                if ($index != $i) $newArrayList[] = $this->get($i);
-            $this->arrayList = $newArrayList;
+                if ($index != $i) $newArrayList[] = $this->get($i); // get các phần tử i khác vị trí index vào mảng newArrayList
+            $this->arrayList = $newArrayList;                       //  
         } else {
             die("ERROR in ArrayList.remove <br> Integer value required");
         }
